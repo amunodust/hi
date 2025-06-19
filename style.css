@@ -30,20 +30,18 @@ body {
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 100%;
-  max-width: 600px;
+  width: 100vw; 
+  max-width: 100%;
   background-color: #222;
   color: white;
-  padding: 10px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  z-index: 9999;
   display: flex;
   align-items: center;
   gap: 10px;
-  box-sizing: border-box;
-  z-index: 9999;
-  margin: 0 auto;
-  right: 0;
-  left: 0;
 }
+
 
 #play-pause {
   font-size: 24px;

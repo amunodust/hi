@@ -18,7 +18,7 @@ playPauseBtn.addEventListener("click", () => {
     playPauseImg.alt = "一時停止";
   } else {
     audio.pause();
-    playPauseImg.src = "images/play.png";
+    playPauseImg.src = "images/play.PNG";
     playPauseImg.alt = "再生";
   }
 });

@@ -35,6 +35,7 @@ body {
   background-color: #222;
   color: white;
   padding: 10px 20px;
+  min-height: 100px;   
   box-sizing: border-box;
   z-index: 9999;
   display: flex;
@@ -78,6 +79,7 @@ body {
 @media (max-width: 450px) {
   #music-player {
     padding:50px 10px;
+    min-height: 100px;   
     flex-direction: column; 
     
   }

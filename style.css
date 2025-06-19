@@ -41,9 +41,9 @@ body {
   align-items: center;
   gap: 10px;
 }
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   #music-player {
-    padding: 8px 10px;
+    padding: 20px 10px;
     flex-direction: column; 
     gap: 5px;
   }
@@ -52,7 +52,7 @@ body {
     max-width: none;
   }
   #play-pause {
-    font-size: 20px; 
+    font-size: 36px; 
   }
   #time {
     width: auto;
@@ -62,7 +62,7 @@ body {
 
 
 #play-pause {
-  font-size: 24px;
+  font-size:24 px;
   background: none;
   border: none;
   color: white;

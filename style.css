@@ -40,24 +40,7 @@ body {
   display: flex;
   align-items: center;
   
-}
-@media (max-width: 450px) {
-  #music-player {
-    padding:50px 10px;
-    flex-direction: column; 
-    
-  }
-  #music-player audio {
-    width: 100%;           
-    max-width: none;
-  }
-  #play-pause {
-    font-size: 36px; 
-  }
-  #time {
-    width: auto;
-    text-align: center;
-  }
+
 }
 
 
@@ -91,3 +74,22 @@ body {
   text-align: right;
   font-family: monospace;
 }
+
+@media (max-width: 450px) {
+  #music-player {
+    padding:50px 10px;
+    flex-direction: column; 
+    
+  }
+  #music-player audio {
+    width: 100%;           
+    max-width: none;
+  }
+  #play-pause {
+    font-size: 36px; 
+  }
+  #time {
+    width: auto;
+    text-align: center;
+  }
+   }

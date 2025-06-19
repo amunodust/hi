@@ -13,7 +13,7 @@ body {
 
 
 .canvas {
-  position: relative;
+  position: absolute;
   width: 1200px;
   height: 2965px;
   margin: 0 auto;

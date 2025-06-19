@@ -36,7 +36,7 @@ body {
   display: flex;
   align-items: center;
   padding: 10px;
-  gap: 10px;
+  gap: 0px;
   box-sizing: border-box;
   z-index: 9999;
 }
@@ -75,4 +75,30 @@ body {
 
 #volume {
   width: 100px;
+}
+
+@media screen and (max-width: 600px) {
+  #music-player {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0px;
+    padding: 12px;
+  }
+
+  #play-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  #volume {
+    width: 100%;
+  }
+
+  #progress-container {
+    height: 10px;
+  }
+
+  #time {
+    text-align: center;
+  }
 }

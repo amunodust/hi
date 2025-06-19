@@ -1,5 +1,6 @@
 const audio = document.getElementById("audio");
 const playPauseBtn = document.getElementById("play-pause");
+const playPauseImg = document.getElementById("play-icon");
 const progressContainer = document.getElementById("progress-container");
 const progress = document.getElementById("progress");
 const timeLabel = document.getElementById("time");
@@ -13,10 +14,12 @@ function formatTime(seconds) {
 playPauseBtn.addEventListener("click", () => {
   if (audio.paused) {
     audio.play();
-    playPauseBtn.textContent = "⏸️";
+    playPauseImg.src = "images/pause.png"; 
+    playPauseImg.alt = "一時停止";
   } else {
     audio.pause();
-    playPauseBtn.textContent = "▶️";
+    playPauseImg.src = "images/play.png";
+    playPauseImg.alt = "再生";
   }
 });
 

@@ -1,0 +1,25 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+  background: #ffffff;
+}
+
+
+.canvas {
+  position: relative;
+  width: 1200px;                 
+  height: 2965px;               
+  margin: 0 auto;              
+  background-image: url("images/background.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% auto;   
+}
+
+
+.gif {
+  position: absolute;
+  z-index: 10;
+}

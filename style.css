@@ -16,7 +16,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 1200px;
   height: 2965px;
   z-index: -1;
   overflow: hidden;
@@ -27,5 +27,4 @@ body {
   user-select: none;
   pointer-events: none;
 }
-
 

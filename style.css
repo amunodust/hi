@@ -2,10 +2,10 @@
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
   background-color: black;
-  height: 2965px;
+  overflow-x: hidden;
 }
+
 
 .canvas {
   position: relative;
@@ -15,7 +15,14 @@ body {
   background-image: url("images/background.png");
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: 1200px auto;
-  z-index: -1;
+  background-size: cover;
+  z-index: 0;
+}
+
+
+.gif {
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
 }
 

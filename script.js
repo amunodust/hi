@@ -4,17 +4,28 @@ const playPauseImg = document.getElementById("play-icon");
 const progressContainer = document.getElementById("progress-container");
 const progress = document.getElementById("progress");
 const timeLabel = document.getElementById("time");
+const volumeControl = document.getElementById("volume");
 
-function formatTime(seconds) {
-  const min = Math.floor(seconds / 60);
-  const sec = Math.floor(seconds % 60).toString().padStart(2, "0");
+function formatTime(s) {
+  const min = Math.floor(s / 60);
+  const sec = Math.floor(s % 60).toString().padStart(2, "0");
   return `${min}:${sec}`;
 }
+
+audio.addEventListener("loadedmetadata", () => {
+  timeLabel.textContent = `0:00 / ${formatTime(audio.duration)}`;
+});
+
+audio.addEventListener("timeupdate", () => {
+  const percent = audio.duration ? (audio.currentTime / audio.duration) * 100 : 0;
+  progress.style.width = percent + "%";
+  timeLabel.textContent = `${formatTime(audio.currentTime)} / ${formatTime(audio.duration)}`;
+});
 
 playPauseBtn.addEventListener("click", () => {
   if (audio.paused) {
     audio.play();
-    playPauseImg.src = "images/pause.png"; 
+    playPauseImg.src = "images/pause.png";
     playPauseImg.alt = "一時停止";
   } else {
     audio.pause();
@@ -23,23 +34,14 @@ playPauseBtn.addEventListener("click", () => {
   }
 });
 
-audio.addEventListener("timeupdate", () => {
-  const percent = (audio.currentTime / audio.duration) * 100 || 0;
-  progress.style.width = percent + "%";
-  timeLabel.textContent = formatTime(audio.currentTime);
-});
-
-progressContainer.addEventListener("click", (e) => {
+progressContainer.addEventListener("click", e => {
   const rect = progressContainer.getBoundingClientRect();
   const clickX = e.clientX - rect.left;
-  const newTime = (clickX / rect.width) * audio.duration;
-  audio.currentTime = newTime;
+  audio.currentTime = (clickX / rect.width) * audio.duration;
 });
 
-if (audio.paused) {
-  audio.muted = false;
-  audio.play();
-  playPauseImg.src = "images/pause.png"; 
-  playPauseImg.alt = "一時停止";
-}
+volumeControl.addEventListener("input", () => {
+  audio.volume = volumeControl.value;
+});
+
 

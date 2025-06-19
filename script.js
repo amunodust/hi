@@ -35,3 +35,11 @@ progressContainer.addEventListener("click", (e) => {
   const newTime = (clickX / rect.width) * audio.duration;
   audio.currentTime = newTime;
 });
+
+if (audio.paused) {
+  audio.muted = false;
+  audio.play();
+  playPauseImg.src = "images/pause.png"; 
+  playPauseImg.alt = "一時停止";
+}
+

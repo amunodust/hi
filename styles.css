@@ -2,20 +2,21 @@
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; 
+  overflow-x: hidden;
   background: #ffffff;
+  background-image: url("images/background.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 1200px auto;
+  height: 2965px;
 }
 
 
 .canvas {
   position: relative;
-  width: 1200px;                 
-  height: 2965px;               
-  margin: 0 auto;              
-  background-image: url("images/background.png");
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: 100% auto;   
+  width: 1200px;
+  height: 2965px;
+  margin: 0 auto;
 }
 
 
@@ -23,3 +24,4 @@ body {
   position: absolute;
   z-index: 10;
 }
+

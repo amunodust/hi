@@ -30,26 +30,26 @@ body {
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 100vw; 
-  max-width: 100%;
-  background-color: #222;
+  width: 100%;
+  background: #222;
   color: white;
-  padding: 25px 10px;  
-  box-sizing: border-box;
-  z-index: 9999;
   display: flex;
   align-items: center;
-  
-
+  padding: 10px;
+  gap: 10px;
+  box-sizing: border-box;
+  z-index: 9999;
 }
 
-
 #play-pause {
-  font-size:24 px;
   background: none;
   border: none;
-  color: white;
   cursor: pointer;
+}
+
+#play-icon {
+  width: 30px;
+  height: 30px;
 }
 
 #progress-container {
@@ -62,34 +62,17 @@ body {
 }
 
 #progress {
-  background: #4caf50;
   height: 100%;
+  background: #4caf50;
   width: 0%;
   border-radius: 3px;
-  transition: width 0.1s linear;
 }
 
 #time {
-  width: 50px;
-  text-align: right;
   font-family: monospace;
+  margin-right: 10px;
 }
 
-@media (max-width: 450px) {
-  #music-player {
-    padding:50px 10px;   
-    flex-direction: column; 
-    
-  }
-  #music-player audio {
-    width: 100%;           
-    max-width: none;
-  }
-  #play-pause {
-    font-size: 36px; 
-  }
-  #time {
-    width: auto;
-    text-align: center;
-  }
-   }
+#volume {
+  width: 100px;
+}

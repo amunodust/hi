@@ -39,13 +39,13 @@ body {
   z-index: 9999;
   display: flex;
   align-items: center;
-  gap: 10px;
+  
 }
 @media (max-width: 450px) {
   #music-player {
-    padding: 20px 10px;
+    padding:50px 10px;
     flex-direction: column; 
-    gap: 5px;
+    
   }
   #music-player audio {
     width: 100%;           

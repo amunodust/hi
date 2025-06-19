@@ -41,6 +41,24 @@ body {
   align-items: center;
   gap: 10px;
 }
+@media (max-width: 400px) {
+  #music-player {
+    padding: 8px 10px;
+    flex-direction: column; 
+    gap: 5px;
+  }
+  #music-player audio {
+    width: 100%;           
+    max-width: none;
+  }
+  #play-pause {
+    font-size: 20px; 
+  }
+  #time {
+    width: auto;
+    text-align: center;
+  }
+}
 
 
 #play-pause {

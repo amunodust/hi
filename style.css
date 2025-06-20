@@ -105,7 +105,7 @@ body {
 .ascii-art1 {
   font-family: monospace;
   white-space: pre;
-  font-size: clamp(0.2px, 0.67vw, 8px);
+  font-size: clamp(0.1px, 0.67vw, 8px);
   color: white;
   z-index: 999;
     position: absolute;

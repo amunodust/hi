@@ -6,13 +6,11 @@ body {
   overflow-x: hidden;
 }
 
-
 .canvas {
   position: relative;
   width: 100%;
   margin: 0 auto;
 }
-
 
 .bg {
   display: block;

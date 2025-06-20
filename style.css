@@ -105,7 +105,6 @@ body {
 .ascii-art1 {
   font-family: monospace;
   white-space: pre;
-  transform: translate(-50%, -50%);
   font-size: clamp(1px, 0.67vw, 10px);
   color: white;
   z-index: 999;

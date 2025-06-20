@@ -110,6 +110,9 @@ body {
   color: white;
   z-index: 999;
     position: absolute;
+    top: 200px;
+  left: 100px;
   pointer-events: none;
   user-select: none;
+  
 }

@@ -10,15 +10,14 @@ body {
 .canvas {
   position: relative;
   width: 1200px;
-  height: 2965px;
   margin: 0 auto;
-  background-image: url("images/background1.png");
-  background-repeat: no-repeat;
-  background-position: center　top;
-  background-size: contain;
-  z-index: 0;
 }
 
+.bg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
 .gif {
   position: absolute;

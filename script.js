@@ -1,7 +1,7 @@
 window.addEventListener("load", function () {
   const spinner = document.querySelector(".spinner");
   const button = document.getElementById("enter-btn");
-  
+
   setTimeout(() => {
     spinner.style.display = "none";
     button.style.display = "block";
@@ -11,8 +11,15 @@ window.addEventListener("load", function () {
 document.getElementById("enter-btn").addEventListener("click", function () {
   document.getElementById("loader").style.display = "none";
   document.getElementById("main-content").style.display = "block";
-});
 
+  // 音楽プレイヤーを表示して再生
+  const audioPlayer = document.getElementById("audio-player");
+  const audio = document.getElementById("audio");
+  audioPlayer.style.display = "block";
+  audio.play().catch((err) => {
+    console.log("自動再生がブロックされました:", err);
+  });
+});
 
 const audio = document.getElementById("audio");
 const playPauseBtn = document.getElementById("play-pause");
@@ -58,6 +65,8 @@ progressContainer.addEventListener("click", e => {
 
 volumeControl.addEventListener("input", () => {
   audio.volume = volumeControl.value;
+});
+
 });
 
 

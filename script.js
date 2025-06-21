@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const button = document.getElementById("enter-btn");
   const loader = document.getElementById("loader");
   const canvas = document.querySelector(".canvas");
+  const canvas2 = document.querySelector(".canvas2");
   const musicPlayer = document.getElementById("music-player");
   const audio = document.getElementById("audio");
   const playPauseBtn = document.getElementById("play-pause");

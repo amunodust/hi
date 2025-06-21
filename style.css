@@ -7,7 +7,9 @@ body {
 }
 
 #loader {
-  position: fixed;
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
   z-index: 9999;
   background: blue;
   top: 0;

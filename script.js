@@ -55,11 +55,13 @@ document.addEventListener("DOMContentLoaded", () => {
     canvas.style.display = "block";
     musicPlayer.style.display = "flex";
 
-    audio.play().catch((err) => {
+    audio.play().then(() => {
+      playPauseImg.src = "images/pause.png";
+      playPauseImg.alt = "一時停止";
+    }).catch((err) => {
       console.warn("自動再生がブロックされました:", err);
     });
   });
 });
-
 
 

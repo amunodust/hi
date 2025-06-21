@@ -131,7 +131,19 @@ body {
 .ascii-art1 {
   font-family: monospace;
   white-space: pre;
-  font-size: clamp(15px, 4vw, 20px);
+  font-size: 20px;
+  color: white;
+  z-index: 999;
+    position: absolute;
+  pointer-events: none;
+  user-select: none;
+  
+}
+
+.ascii-art2 {
+  font-family: monospace;
+  white-space: pre;
+  font-size: 10px;
   color: white;
   z-index: 999;
     position: absolute;

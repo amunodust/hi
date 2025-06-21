@@ -2,10 +2,8 @@ window.addEventListener("load", function () {
   const spinner = document.querySelector(".spinner");
   const button = document.getElementById("enter-btn");
 
-  setTimeout(() => {
     spinner.style.display = "none";
     button.style.display = "block";
-  }, 100);
 
   const musicPlayer = document.getElementById("music-player");
   const audio = document.getElementById("audio");

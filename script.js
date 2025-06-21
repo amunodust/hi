@@ -12,9 +12,9 @@ document.getElementById("enter-btn").addEventListener("click", function () {
   document.getElementById("loader").style.display = "none";
   document.getElementById("canvas").style.display = "block";
 
-  const audioPlayer = document.getElementById("audio-player");
+  const music-player = document.getElementById("audio-player");
   const audio = document.getElementById("audio");
-  audioPlayer.style.display = "block";
+  music-player.style.display = "block";
   audio.play().catch((err) => {
     console.log("自動再生がブロックされました:", err);
   });

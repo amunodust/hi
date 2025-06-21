@@ -10,9 +10,8 @@ window.addEventListener("load", function () {
 
 document.getElementById("enter-btn").addEventListener("click", function () {
   document.getElementById("loader").style.display = "none";
-  document.getElementById("main-content").style.display = "block";
+  document.getElementById("canvas").style.display = "block";
 
-  // 音楽プレイヤーを表示して再生
   const audioPlayer = document.getElementById("audio-player");
   const audio = document.getElementById("audio");
   audioPlayer.style.display = "block";

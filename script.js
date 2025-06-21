@@ -1,3 +1,19 @@
+window.addEventListener("load", function () {
+  const spinner = document.querySelector(".spinner");
+  const button = document.getElementById("enter-btn");
+  
+  setTimeout(() => {
+    spinner.style.display = "none";
+    button.style.display = "block";
+  }, 3000);
+});
+
+document.getElementById("enter-btn").addEventListener("click", function () {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("main-content").style.display = "block";
+});
+
+
 const audio = document.getElementById("audio");
 const playPauseBtn = document.getElementById("play-pause");
 const playPauseImg = document.getElementById("play-icon");

@@ -143,7 +143,7 @@ body {
 .ascii-art2 {
   font-family: monospace;
   white-space: pre;
-  font-size: clamp(0.5px, 0.8vw, 12px);
+  font-size: clamp(0.5px, 1vw, 14px);
   color: white;
   z-index: 999;
     position: absolute;

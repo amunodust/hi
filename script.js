@@ -5,7 +5,7 @@ window.addEventListener("load", function () {
   setTimeout(() => {
     spinner.style.display = "none";
     button.style.display = "block";
-  }, 3000);
+  }, 100);
 
   const musicPlayer = document.getElementById("music-player");
   const audio = document.getElementById("audio");
